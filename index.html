@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker News Clone</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <div id="app-header">
+            <header class="header header-home">
+                <div class="header-content">
+                    <span class="header-title">
+                        <img src="img/hacker.png" class="header-logo">
+                        Hacker News
+                    </span>
+                    <nav class="nav">
+                        <a href="#/" class="header-link">Top</a>
+                        <a href="#/new" class="header-link">New</a>
+                        <a href="#/ask" class="header-link">Ask</a>
+                        <a href="#/show" class="header-link">Show</a>
+                        <a href="#/job" class="header-link">Jobs</a>
+                        <a href="#/favorites" class="header-link">Favorites</a>
+                    </nav>
+                    
+                </div>
+            </header>
+        </div>
+        <div id="route-container">
+            <div id="router-outlet"> </div>
+        </div>
+    </div>  
+    <!-- Script -->
+    <script type="module" src="app.js"></script>
+    <!--  Navigo is a simple minimalistic JavaScript router with a fallback for older browsers https://npmjs.com/package/navigo  -->
+    <script src= "//unpkg.com/navigo@6"></script>
+    
+</body>
+</html>
